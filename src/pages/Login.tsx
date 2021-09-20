@@ -1,5 +1,4 @@
 
-import '../styles/auth.scss';
 import { FaSignInAlt } from 'react-icons/fa';
 import { useContext, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
@@ -9,6 +8,8 @@ import { Toaster, toast } from 'react-hot-toast'
 import { Button } from '../components/Button'
 import { AuthContext } from '../context/Auth';
 import { verifyLogon } from '../context/AuthVerify'
+
+import '../styles/login.scss'
 
 export function Login () {
     const { register, handleSubmit } = useForm();
