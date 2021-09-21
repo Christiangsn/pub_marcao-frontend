@@ -5,11 +5,11 @@ import { useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 import { Toaster, toast } from 'react-hot-toast'
 
-import { Button } from '../components/Button'
-import { AuthContext } from '../context/Auth';
-import { verifyLogon } from '../context/AuthVerify'
+import { Button } from '../../components/Button'
+import { AuthContext } from '../../context/Auth';
+import { verifyLogon } from '../../context/AuthVerify'
 
-import '../styles/login.scss'
+import './login.scss'
 
 export function Login () {
     const { register, handleSubmit } = useForm();
