@@ -1,3 +1,3 @@
 export { ContentCompany } from './ContentCompany'
-export { ContentProducts } from './ContentProducts'
+export { ContentProducts } from './DropDownUsers'
 export { ContentDevelopers } from './ContentDevelopers'

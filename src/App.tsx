@@ -1,16 +1,16 @@
-import { BrowserRouter, Route } from 'react-router-dom'
-import { AuthProvider } from './context/Auth'
-
-import { Login } from "./pages/Login/" 
-import { Home } from "./pages/Home/"
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { AuthProvider } from './context/Auth';
+import { Login } from './pages/Login';
+import { Internal } from './routes/Internal.routes';
 
 function App() {
   return (
     <BrowserRouter>
-    
       <AuthProvider>
-        <Route path="/" exact component={Login} />
-        <Route path="/home" exact component={Home} />
+        <Switch>
+          <Route path='/' exact component={Login}  />
+          <Route component={Internal} />
+        </Switch>
       </AuthProvider>
 
     </BrowserRouter>

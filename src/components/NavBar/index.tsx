@@ -3,7 +3,7 @@ import { ContentCompany, ContentProducts, ContentDevelopers } from '../DropDownC
 import { DropDownOptions, DropDownRoot } from '../DropDown'
 import { DropDownProvider } from '../../context/DropDownContext'
 
-import logo from '../../assets/images/1087961.png'
+import logo from '../../assets/images/logopub.png'
 import './navbar.scss'
 
 export function NavBar () {

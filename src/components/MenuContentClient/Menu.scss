@@ -1,0 +1,53 @@
+#Content {
+    .content-icon {
+        display: flex;
+
+        > strong {
+            font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #535f6c;
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+
+    .image-client {
+        background: #f7eafe;
+        border-radius: 8px;
+        margin-left: 15px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        > img {
+            width: 40px;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        
+
+        .input {
+            background-color:  #f5f5f7;
+            cursor: pointer;
+            margin: 10px;
+            min-width: 200px;
+            min-height: 400px;
+            border-radius: 7px;
+
+
+            &:hover {
+                top:-2px;
+                opacity:0.5;
+                box-shadow:0 2px 2px #666
+            }
+        }
+    }
+}

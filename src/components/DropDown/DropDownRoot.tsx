@@ -9,6 +9,8 @@ export function DropDownRoot () {
     const { options, cachedId, getOptionById, targetId } = useContext(DropDownContext)
 
     const id = cachedId || undefined
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const cachedOption = useMemo(() => getOptionById({id}), [cachedId])
     
     let [ xAnimate, widthAnimate, heightAnimate ] = [0, 0, 0]

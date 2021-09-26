@@ -16,7 +16,7 @@ export function Login () {
     const { user, signIn } = useContext(AuthContext);
     const history = useHistory()
     
-    async function handleSignIn (data: any) {
+    async function handleSignIn (data: any): Promise<void> {
 
         try {
             if(!user) {
@@ -32,7 +32,6 @@ export function Login () {
 
     useEffect(() => {  
         verifyLogon().then( (result: Boolean) => {
-            console.log(result)
             if(result === true){
                 history.push('/home')
             }

@@ -20,12 +20,13 @@
         width: 400px;
         height: 400px;
 
-        background: linear-gradient(45deg, black, transparent);
+        background: #f8f8fa;
 
         display: flex;
         flex-direction: column;
 
-        border-radius: 22px;
+        border-radius: 4px;
+        border: 0.3px solid black;
     }
 
     .login div{
@@ -52,26 +53,24 @@
             width: 80%;
             height: 3rem;
             margin-bottom: 1.25rem;
-            border-radius: 20px;
+            border-radius: 15px;
             background-color: #f9f9f9;
         }
     
         .input-label {
             position: absolute;
             font-family: inherit;
-            color: #ffffff;
+            color: #000000;
             font-size: 1rem;
             font-weight: 400;
             line-height: inherit;
             left: 1rem;
-            top: 0.95rem;
-            padding: 0 0.25rem;
             transition: all 0.3s ease;
         }
     
         .input-field {
             position: absolute;
-            border-radius: 20px;
+            border-radius: 15px;
             font-family: inherit;
             font-size: 1rem;
             font-weight: 400;
@@ -95,15 +94,15 @@
     
             // Label Floating when Focus
             &:focus {
-                border: 2px solid #d1cb1f;
+                border: 2px solid #1f5ad1;
                 & + .input-label {
                     font-size: 0.9rem;
                     font-weight: 500;
                     top: -0.75rem;
                     left: 1rem;
                     z-index: 5;
-                    color: #d1cb1f;
-                    background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0) 70%, #1A1A1E 25%, #1A1A1E 5%);
+                    color: #1f5ad1;
+                    background: #f8f8fa;
                 }
             }
     
