@@ -1,0 +1,124 @@
+// .drop-list {
+//     font: 400 16px 'Roboto', sans-serif;
+
+//     padding: 1px 4px 5px 16px;
+//     padding-top: 5px;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     border-bottom: 1px solid rgb(186, 186, 186);
+
+    
+
+//     .drop-client {
+        
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         padding-bottom: 5px;
+//         min-width: 50%;
+        
+
+//         > img {
+//             border-radius: 50%;
+//             width: 30px;
+//         }
+//     }
+
+//     .drop-data {
+//         width: 40%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+
+//     .drop-name {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         width: 100%;
+//         margin-left: 10px;
+       
+
+//         > span {
+//             color: rgb(0, 0, 0);
+//             font-size: 22px;
+//             width: 60%;
+            
+//         }
+        
+//         > strong {
+//             color:rgb(120, 117, 117);
+//             font-size: 12px;
+//         }
+//     }
+
+
+//     .drop-options {
+//         width: 20%;
+
+//         display: flex;
+//         justify-content: center;
+
+//         >button {
+//             border-radius: 50%;
+//             cursor: pointer;
+    
+//             height: 50px;
+//             width: 50px;
+//             margin-left: 7px;
+//             float:left;
+    
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+    
+//             border: 1px solid aquamarine;
+    
+//             > svg {
+//                 color: #000000;
+//                 width: 25px;
+//                 height: 25px;
+//             }
+    
+//             &:hover {
+//                 > svg {
+//                     color: blue;
+//                 }
+//             }
+//         }
+//     }
+
+
+// }
+
+.dropdown-clients {
+    padding: 1px 4px 5px 16px;
+    padding-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(186, 186, 186);
+
+        .drop-client {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 5px;
+        width: 35%;
+
+        > img {
+            border-radius: 50%;
+            width: 30px;
+            margin-right: 20px;
+        }
+
+    }
+
+    > strong {
+        width: 20%
+    }
+
+}

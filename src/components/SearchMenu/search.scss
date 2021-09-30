@@ -1,0 +1,92 @@
+.content-search {
+    padding: 1px 4px 5px 16px;
+    margin-bottom: 15px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #28292c;
+    border-radius: 8px 8px 0px 0px;
+
+    .search-box {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        > input {
+            background-color: red;
+        }
+    }
+
+    .search {
+        top: 40%;
+        left: 40%;
+        width: 400px;
+        background: transparent;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+
+        border-bottom: 1px solid #4b4c4e;
+        justify-self: center;
+
+
+        > input {
+            height: 80%;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            background: none;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 30px;
+            background: #1f1e21;
+            color: #fff
+        }
+
+        > svg {
+            position: absolute;
+            float: right;
+            margin-left: 370px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .search-description{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        width: 100%;
+        padding-left: 40px;
+
+        .description{
+            display: flex;
+            flex-direction: row;
+            color: #959494;
+  
+            align-items: center;
+
+            > svg {
+                margin-right: 10px;
+                color: #959494
+            }
+        }
+
+        .search-name {
+            width: 35%;
+        }
+
+        .search-apelido {
+            width: 20%
+        }
+
+        .search-data {
+            width: 20%
+        }
+
+
+    }
+}

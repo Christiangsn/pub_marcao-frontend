@@ -13,22 +13,7 @@ export const ContentProducts = () => (
           <p>Criação e Edição de Clientes</p>
         </div>
       </li>
-      <li>
-        <span className="billing" />
-
-        <div>
-          <h3>Billing</h3>
-          <p>Plataforma completa para pagamentos online</p>
-        </div>
-      </li>
-      <li>
-        <span className="connect" />
-
-        <div>
-          <h3>Connect</h3>
-          <p>Plataforma completa para pagamentos online</p>
-        </div>
-      </li>
+      
     </ul>
   </ProductsWrapper>
 );

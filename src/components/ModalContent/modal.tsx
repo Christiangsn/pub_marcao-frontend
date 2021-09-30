@@ -124,7 +124,8 @@ export function ClientsModal ( {closeModal} : any ) {
     }, [data.cpf.length, data.name.length])
 
     return (
-        <div className="modal">
+        <div className="modal-content">
+            <div className="modal">
             <div className="steps">
                 {steps.map(option => (
                     <div className={ option.id === activeStep ? "onchange focus" : "onchange"} key={option.id}>
@@ -265,6 +266,7 @@ export function ClientsModal ( {closeModal} : any ) {
 
             </form>
         </div>
-    )
+        </div>
+    )   
     
 }

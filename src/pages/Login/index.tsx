@@ -1,9 +1,12 @@
 
 import { FaSignInAlt } from 'react-icons/fa';
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
+
 import { Toaster, toast } from 'react-hot-toast'
+import { MdEmail } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri"
 
 import { Button } from '../../components/Button'
 import { AuthContext } from '../../context/Auth';
@@ -14,11 +17,13 @@ import './login.scss'
 export function Login () {
     const { register, handleSubmit } = useForm();
     const { user, signIn } = useContext(AuthContext);
+    const [loading, setLoading] = useState<Boolean>(false)
     const history = useHistory()
     
     async function handleSignIn (data: any): Promise<void> {
 
         try {
+            setLoading(true)
             if(!user) {
                 return await signIn(data)
             }
@@ -49,9 +54,7 @@ export function Login () {
             />
             <main>
                 <div className="login"> 
-                    <div>
-                        <strong> Login </strong>
-                    </div>
+
                     <form name="login" className="form" onSubmit={handleSubmit(handleSignIn)}>
                         <div className="input-control">
                             <input 
@@ -60,10 +63,8 @@ export function Login () {
                                 name="email" 
                                 className="input-field"
                                  placeholder="Email Address" />
-                            <label  
-                                className="input-label">
-                                    Email
-                            </label>
+                            <label  className="input-label"> Email </label>
+                            <MdEmail />
                         </div>
                         <div className="input-control">
                             <input 
@@ -76,15 +77,29 @@ export function Login () {
                                 className="input-label">
                                     Senha
                             </label>
+                            <RiLockPasswordFill />
                         </div>
-                        <div className="submit">
-                            <Button 
-                                type="submit" >
-                                    <FaSignInAlt />
-                                    Entrar
-                            </Button>
-                            
-                        </div>
+                        {!loading && (
+                            <div className="submit">
+                                <Button
+                                    className="input-btn" 
+                                    type="submit" >
+                                        <FaSignInAlt />
+                                        Entrar
+                                </Button>
+                            </div>
+                            )
+                        }
+
+                        {loading  && (
+                            <div className="submit">
+                                <div className="spinner">
+                                    <div className="spinner-loading"></div>
+                                </div>
+                            </div>
+                            )
+                        }
+
                     </form>
                 </div>
             </main>

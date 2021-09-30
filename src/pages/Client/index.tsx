@@ -5,7 +5,7 @@ import { useState } from 'react'
 import './client.scss'
 import editClient from '../../assets/menu/edit.png'
 import listClient from '../../assets/menu/listar.png'
-import { ClientsModal } from '../../components/Clients/modal'
+import { ClientsModal } from '../../components/ModalContent/modal'
 
 
 export function ClientHome () {
